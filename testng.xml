@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression_test" parallel="tests" thread-count="4">
+<parameter name="execute_remotely" value="N"></parameter>
+<parameter name="hub_ip_address" value="192.168.0.101"></parameter>
+<parameter name="exclude" value="0"></parameter>
+
+
+<listeners>
+
+<listener class-name="wipro.opencart.listeners.SuiteListener"></listener>
+<listener class-name="wipro.opencart.listeners.TestCaseListener"></listener>
+
+</listeners>
+
+
+  <test name="TC01 - Registration and Add to Cart">
+  		<parameter name="author" value="swanand"></parameter>
+		<parameter name="category" value="Regression"></parameter>
+		<parameter name="TestCaseID" value="1"></parameter>
+		<parameter name="description" value="verify login"></parameter>
+		<parameter name="date" value="13-Feb-2018"></parameter>		
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="url" value="http://localhost:80/opencart-1.5.6.4"></parameter>
+		<parameter name="filepath" value="D:\\selenium\\JARS\\chromedriver.exe"></parameter>
+		
+		<classes>
+
+			<class name="wipro.opencart.config.LaunchApplication">
+				<methods>
+					<include name="launchApp"></include>
+				</methods>
+			</class>
+			<class name="wipro.opencart.modules.CreateAccountModule">
+				<methods>					
+ 				   	<include name="CreateAccount"></include>     
+					<include name="reviewProduct"></include> 
+					<include name="getWishlistPrice"></include>   
+					<include name="ProductComparison"></include>					
+					<include name="AddPhonesToCart"></include>
+				</methods>
+			</class>
+
+		</classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
