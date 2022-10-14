@@ -34,7 +34,7 @@
 			</class>
 			<class name="wipro.opencart.modules.CreateAccountModule">
 				<methods>					
- 				   	<include name="CreateAccount"></include>     
+ 				   	<!-- <include name="CreateAccount"></include> -->     
 					<include name="reviewProduct"></include> 
 					<include name="getWishlistPrice"></include>   
 					<include name="ProductComparison"></include>					
