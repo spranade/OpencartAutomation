@@ -1,7 +1,7 @@
-/target/
-/Screenshots/
-/test-output/
-/logs/
+/target/*
+/Screenshots/*
+/test-output/*
+/logs/*
 /.idea/
 /.settings/
 /*.html
