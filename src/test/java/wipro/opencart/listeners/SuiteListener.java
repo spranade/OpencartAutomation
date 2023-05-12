@@ -24,7 +24,7 @@ public class SuiteListener implements ISuiteListener {
 		System.out.println("===============================================");
 		
 		try {
-			//HTMLReportGenerator.TestSuiteStart("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\report.html", "Opencart");
+			//HTMLReportGenerator.TestSuiteStart("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\report.html", "Opencart");
 			HTMLReportGenerator.TestSuiteStart(reportFilePath, "Opencart");
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
@@ -45,7 +45,7 @@ public class SuiteListener implements ISuiteListener {
 		
 		HTMLReportGenerator.TestSuiteEnd();
 
-		//SendMail.SendReportThroughMail("spranade91@gmail.com", "spranade91@gmail.com", "smtp.gmail.com" , "465", "your_password", reportFilePath , "smtp");
+		//SendMail.SendReportThroughMail("spranade91@gmail.com", "spranade@rediffmail.com", "smtp.gmail.com" , "465", "your_password", reportFilePath , "smtp");
 	
 		
 	}

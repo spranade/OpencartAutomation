@@ -91,7 +91,7 @@ public class Utility {
 		FileHandler.copy(source, new File (dest));
 		ITesseract image = new Tesseract();
 		String imageText = image.doOCR(new File(dest));
-		//String imageText = image.doOCR(new File("D:\\ejagruti\\index.jpeg"));
+		//String imageText = image.doOCR(new File("E:\\ejagruti\\index.jpeg"));
 		String finalText = imageText.replaceAll("[^a-zA-Z0-9]", "");
 		System.out.println("Captcha ====>" + finalText);
 		return finalText;

@@ -59,7 +59,7 @@ public class CreateAccountModule  {
 		System.out.println("---->"+excelFilepath);
 		Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile(excelFilepath, "Sheet1");
 		
-		//Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
+		//Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
 		Set<Integer> keys = exceldata.keySet().stream().sorted().collect(Collectors.toSet());
 		Object data1[][] = new Object[keys.size() - 1][exceldata.get(keys.size() - 1).length];
 		
@@ -100,7 +100,7 @@ public class CreateAccountModule  {
 		String excelFilepath = System.getProperty("user.dir") + "\\src\\test\\resources\\ReviewProduct.xlsx";
 		Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile(excelFilepath, "Sheet1");
 		System.out.println("---->"+excelFilepath);
-		//Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\ReviewProduct.xlsx", "Sheet1");
+		//Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\ReviewProduct.xlsx", "Sheet1");
 		Set<Integer> keys = exceldata.keySet().stream().sorted().collect(Collectors.toSet());
 		Object data2[][] = new Object[keys.size() - 1][exceldata.get(keys.size() - 1).length];
 		
@@ -128,7 +128,7 @@ public class CreateAccountModule  {
 		String excelFilepath = System.getProperty("user.dir") + "\\src\\test\\resources\\SearchProduct.xlsx";
 		Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile(excelFilepath, "Sheet1");
 		System.out.println("---->"+excelFilepath);
-//		Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\SearchProduct.xlsx", "Sheet1");
+//		Hashtable<Integer,String[]> exceldata = Excel_Operations.ReadAllExcelFile("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\SearchProduct.xlsx", "Sheet1");
 		Set<Integer> keys = exceldata.keySet().stream().sorted().collect(Collectors.toSet());
 		Object data3[][] = new Object[keys.size() - 1][exceldata.get(keys.size() - 1).length];
 		
@@ -154,7 +154,7 @@ public class CreateAccountModule  {
 	public void CreateAccount(String FirstName	,String LastName	,String Email	,String Telephone	,String Address1	,String City	,String PostalCode	,String Country ,String State	,String Password	,String ConfirmPassword ) throws Exception
 	{
 		//readExcel exl = new readExcel();
-		//exl.passData("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
+		//exl.passData("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
 		Username=FirstName;
 		Pwd=Password;
 		EmailId=Email;
@@ -201,7 +201,7 @@ public class CreateAccountModule  {
 	public void reviewProduct(String username,String review, String rating) throws Exception
 	{
 		//readExcel exl = new readExcel();
-		//exl.passData("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\ReviewProduct.xlsx", "Sheet1");
+		//exl.passData("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\ReviewProduct.xlsx", "Sheet1");
 		Homepage hm = new Homepage(Startup.wd);
 		SamsungTab st = new SamsungTab(Startup.wd);
 		AccountLogin al = new AccountLogin(Startup.wd);
@@ -304,7 +304,7 @@ public class CreateAccountModule  {
 	public void ProductComparison(String Product) throws Exception
 	{
 		//readExcel exl = new readExcel();
-		//exl.passData("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\SearchProduct.xlsx", "Sheet1");
+		//exl.passData("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\SearchProduct.xlsx", "Sheet1");
 		System.out.println("===>>"+Username+"===>>"+Pwd+"===>>"+EmailId);
 		Homepage hm = new Homepage(Startup.wd);
 		hm.clickLogin();

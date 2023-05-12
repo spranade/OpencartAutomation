@@ -30,7 +30,7 @@ public class HTMLReportGenerator {
 	{
 		report.flush();
 		report.close();
-		Startup.wd.get(System.getProperty("user.dir") +"\\result.html");
+		Startup.wd.get(System.getProperty("user.dir") +"\\test-output\\result.html");
 	}
 	public static void TestCaseStart(String TestName,String Description)
 	{
@@ -87,7 +87,7 @@ public class HTMLReportGenerator {
 		
 	}
 	public static void main(String[] args) throws UnknownHostException {
-		TestSuiteStart(System.getProperty("user.dir") +"\\result.html", "Opencart");
+		TestSuiteStart(System.getProperty("user.dir") +"\\test-output\\result.html", "Opencart");
 		TestCaseStart("this is test name", "this is description");
 		StepDetails("pass", "this is step1", "this is step details1","");
 		StepDetails("fail", "this is step2", "this is step details2","");

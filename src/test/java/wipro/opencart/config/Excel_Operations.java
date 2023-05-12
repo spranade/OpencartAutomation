@@ -195,7 +195,7 @@ public class Excel_Operations {
 	String cellstring = GetCellData(System.getProperty("user.dir") + "\\src\\test\\resources\\RegistrationDetails.xlsx","Sheet1",1,0);
 	//GetCellData(String filename,int sheetno, int colno, int rowno);
 	//System.out.println(cellstring);	
-	//SetCellData("D:\\Swanand\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx","Sheet1",2,6,"BBBBBBBB");
+	//SetCellData("E:\\Swanand\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx","Sheet1",2,6,"BBBBBBBB");
 	//SetCellData(filename, sheetno, colno, rowno, datastring);	
 	
 	ReadAllExcelFile(System.getProperty("user.dir") + "\\src\\test\\resources\\RegistrationDetails.xlsx","Sheet1");

@@ -136,7 +136,7 @@ public class readExcel  {
 		
 			String excelFilepath = System.getProperty("user.dir") + "\\src\\test\\resources\\RegistrationDetails.xlsx";
 			readExcel ex = new readExcel();
-			//Object[][] data = ex.getExcelData("D:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
+			//Object[][] data = ex.getExcelData("E:\\WIPRO\\Topgear\\automation_opencart_512_testcasesselenium_webdriver\\RegistrationDetails.xlsx", "Sheet1");
 			Object[][] data = ex.getExcelData(excelFilepath, "Sheet1");
 			System.out.println(data);
 			
